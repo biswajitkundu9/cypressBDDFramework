@@ -1,0 +1,19 @@
+{
+  "name": "cypressframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biswajitkundu9/cypressDummyFrameWork.git"
+  },
+  "author": "biswajit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biswajitkundu9/cypressDummyFrameWork/issues"
+  },
+  "homepage": "https://github.com/biswajitkundu9/cypressDummyFrameWork#readme"
+}
