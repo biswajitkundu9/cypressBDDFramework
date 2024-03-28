@@ -2,6 +2,7 @@
     "name": "abcde",
     "gender":"Female",
     "email":"abc@abc.com",
+    "password":"12345678",
     "productsName":["iphone","Blackberry"]
 }
 
