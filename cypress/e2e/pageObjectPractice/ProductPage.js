@@ -1,15 +1,12 @@
 /// <reference types="Cypress" />
 
-const INPUT_BOX="input[name='name']:nth-child(2)";
-const EMAIL_BOX="input[name='email']";
-const PASSWORD_BOX="#exampleInputPassword1";
-const GENDER_SELCT="#exampleFormControlSelect1";
+const products_price="table[class='table table-hover'] td:nth-child(4) strong";
+
 
 class ProductPage{
 
-    static fillInputBox(fillName){
-        cy.get(INPUT_BOX).clear().type(fillName);
-        cy.get(INPUT_BOX).should('have.value',fillName);
+    static getProductPrice(fillName){
+        
     }
 
 

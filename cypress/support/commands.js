@@ -32,3 +32,9 @@ Cypress.Commands.add('selectProduct', (productName) => {
         }
     });
 })
+
+Cypress.Commands.add('clickedByUsingContains', (navigationLinkName) => {
+    cy.log(`Going to clicked on link named as : ${navigationLinkName}`);
+    cy.contains(navigationLinkName).click();
+    cy.log(`Clicked on : ${navigationLinkName}`);
+})

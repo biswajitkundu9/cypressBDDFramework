@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 
 import HomePage from "../pageObjectPractice/HomePage"
+import CheckoutPage from "../pageObjectPractice/CheckoutPage"
 
 describe('Practice Step',function(){
 
@@ -23,15 +24,22 @@ describe('Practice Step',function(){
         HomePage.fillEmail(this.data.email);
         HomePage.fillPassword(this.data.password);
         HomePage.selectGender(this.data.gender);
-    })
+    });
 
-    it("Automate the Shop page",function(){
-        cy.contains("Shop").click();
-        cy.wait(2000);
+    it("Automate the Checkout page",function(){
+        //cy.contains("Shop").click();
+        cy.clickedByUsingContains("Shop");
+        //cy.wait(2000);
         this.data.productsName.forEach(function(product){
             cy.selectProduct(product);
         })
-        cy.contains("Checkout").click();
-    })
+        cy.clickedByUsingContains("Checkout");
+       // cy.wait(2000);
+        CheckoutPage.clickCheckOutButtonFromCheckoutPage();
+        CheckoutPage.selectCountry("India");
+        CheckoutPage.clickOnTermsAndConditions();
+        cy.clickedByUsingContains("Purchase");
+        CheckoutPage.validatePurchasedMsg();
+    });
 
 })
