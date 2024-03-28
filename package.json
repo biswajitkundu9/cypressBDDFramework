@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/biswajitkundu9/cypressDummyFrameWork/issues"
   },
-  "homepage": "https://github.com/biswajitkundu9/cypressDummyFrameWork#readme"
+  "homepage": "https://github.com/biswajitkundu9/cypressDummyFrameWork#readme",
+  "devDependencies": {
+    "cypress": "^13.7.1"
+  }
 }
