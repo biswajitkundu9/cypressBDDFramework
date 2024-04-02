@@ -2,6 +2,7 @@
 
 import HomePage from "../pageObjectPractice/HomePage"
 import CheckoutPage from "../pageObjectPractice/CheckoutPage"
+import ProductPage from "../pageObjectPractice/ProductPage";
 
 describe('Practice Step',function(){
 
@@ -15,7 +16,8 @@ describe('Practice Step',function(){
     })
 
     beforeEach(function(){
-        cy.visit("https://rahulshettyacademy.com/angularpractice/");
+        //cy.visit("https://rahulshettyacademy.com/angularpractice/");
+        cy.visit(Cypress.env('PRACTICE_URL'));
     })
 
     it('Fill up the form',function(){
@@ -27,14 +29,12 @@ describe('Practice Step',function(){
     });
 
     it("Automate the Checkout page",function(){
-        //cy.contains("Shop").click();
         cy.clickedByUsingContains("Shop");
-        //cy.wait(2000);
         this.data.productsName.forEach(function(product){
             cy.selectProduct(product);
         })
         cy.clickedByUsingContains("Checkout");
-       // cy.wait(2000);
+        ProductPage.validateTotalProductPrice();
         CheckoutPage.clickCheckOutButtonFromCheckoutPage();
         CheckoutPage.selectCountry("India");
         CheckoutPage.clickOnTermsAndConditions();
