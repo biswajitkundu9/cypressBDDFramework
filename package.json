@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":".\\node_modules\\.bin\\cypress run",
+    "headtest":"npm run test -- --headed",
+    "head-test-chrome":"npm run headtest -- --browser chrome",
+    "head-test-chrome-praticespec":"npm run head-test-chrome --spec process.cwd()+\\cypress\\e2e\\Practice\\Practice.cy.js --env PRACTICE_URL=https://rahulshettyacademy.com/angularpractice/"
   },
   "repository": {
     "type": "git",
