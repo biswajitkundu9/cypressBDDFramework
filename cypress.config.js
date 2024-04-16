@@ -25,6 +25,7 @@ module.exports = defineConfig({
   //port:8089,
   e2e: {
     setupNodeEvents,
-    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+    //specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+    specPattern: 'cypress/e2e/BDD/*.feature',
   },
 });

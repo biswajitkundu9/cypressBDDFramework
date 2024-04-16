@@ -9,6 +9,12 @@
     "head-test-chrome": "npm run headtest -- --browser chrome",
     "head-test-chrome-praticespec": "npm run head-test-chrome --spec process.cwd()+\\cypress\\e2e\\Practice\\Practice.cy.js --env PRACTICE_URL=https://rahulshettyacademy.com/angularpractice/"
   },
+  "cypress-cucumber-preprocessorrc.json": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-html-reports"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/biswajitkundu9/cypressDummyFrameWork.git"
@@ -20,7 +26,8 @@
   },
   "homepage": "https://github.com/biswajitkundu9/cypressDummyFrameWork#readme",
   "devDependencies": {
-    "cypress": "^13.7.1"
+    "cypress": "^13.7.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.3",

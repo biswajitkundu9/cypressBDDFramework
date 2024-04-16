@@ -21,3 +21,4 @@ And('Fill the password field',()=>{
 Then('Select the gender',()=>{
     HomePage.selectGender(this.data.gender);
 })
+
