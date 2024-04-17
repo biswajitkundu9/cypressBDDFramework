@@ -18,10 +18,6 @@ When (/^Fill the password "([^"]*)" field$/, (password) => {
     HomePage.fillPassword(password);
 });
 
-Then('Select the gender',()=>{
-    
-})
-
 When (/^Fill the gender "([^"]*)" field$/, (gender) => {
     HomePage.selectGender(gender);
 });

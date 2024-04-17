@@ -8,6 +8,6 @@ Feature: End to End fill up the page
     And Fill the password <password> field
     Then Fill the gender <gender> field
   Examples:
-      | username | email         | password    | gender   |
-      |  "sm"    | "sm@abc.com" | "12345678"   | "Female" |
+      | username  | email         | password    | gender   |
+      |  "sm"     | "sm@abc.com" | "12345678"   | "Female" |
       |  "sm1"    | "sm1@abc.com" | "12345678" | "Female" |
