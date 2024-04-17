@@ -1,6 +1,6 @@
 Feature: End to End fill up the page
 
-    @Hello
+    @Regression
     Scenario: Form fill up page validations
     Given i navigate to home page
     When Fill the <username> field
